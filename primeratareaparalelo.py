@@ -11,7 +11,7 @@ def scrape(url):
 urls = ["a.com", "b.com", "c.com", "d.com"]
 if __name__ == "__main__":
     pool = Pool(processes=4)
-    data = pool.map(scrape, urls)
+    data = pool.map(scrape, urls) # Aplica la función scrape a cada URL en la lista urls de manera paralela utilizando los procesos trabajadores y almacena los resultados en una lista llamada data
     pool.close()    
     print()
     for row in data:
