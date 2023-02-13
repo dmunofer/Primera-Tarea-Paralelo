@@ -15,4 +15,5 @@ if __name__ == "__main__":
     pool.close()    
     print()
     for row in data:
+        # Itera sobre la lista data
         print(row)
