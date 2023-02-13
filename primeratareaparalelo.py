@@ -1,6 +1,6 @@
 from multiprocessing import Pool  # Importa la clase Pool del módulo multiprocessing
 from time import sleep # Importa la función sleep del módulo time
-import random
+import random # Importa el módulo random para generar números aleatorios
 def scrape(url):
     print("starting", url)
     duration = round(random.random(),3)
