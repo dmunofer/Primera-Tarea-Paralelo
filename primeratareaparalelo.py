@@ -4,7 +4,7 @@ import random # Importa el módulo random para generar números aleatorios
 def scrape(url):
     # Define la función scrape que toma una URL como entrada
     print("starting", url) # Imprime un mensaje indicando que se está iniciando el raspado de la URL
-    duration = round(random.random(),3)
+    duration = round(random.random(),3) # Genera un número aleatorio entre 0 y 1, lo redondea a 3 decimales y lo asigna a la variable duration
     sleep(duration)
     print("finished", url, "time taken:", duration, "seconds")
     return url, duration
