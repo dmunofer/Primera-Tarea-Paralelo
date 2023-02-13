@@ -12,8 +12,8 @@ urls = ["a.com", "b.com", "c.com", "d.com"]
 if __name__ == "__main__":
     pool = Pool(processes=4)
     data = pool.map(scrape, urls) # Aplica la función scrape a cada URL en la lista urls de manera paralela utilizando los procesos trabajadores y almacena los resultados en una lista llamada data
-    pool.close()    
+    pool.close()
     print()
     for row in data:
         # Itera sobre la lista data
-        print(row)
+        print(row) # Imprime cada tupla que contiene la URL y el tiempo que tomó
