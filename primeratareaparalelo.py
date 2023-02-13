@@ -1,5 +1,5 @@
 from multiprocessing import Pool  # Importa la clase Pool del módulo multiprocessing
-from time import sleep
+from time import sleep # Importa la función sleep del módulo time
 import random
 def scrape(url):
     print("starting", url)
