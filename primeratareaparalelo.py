@@ -7,7 +7,7 @@ def scrape(url):
     duration = round(random.random(),3) # Genera un número aleatorio entre 0 y 1, lo redondea a 3 decimales y lo asigna a la variable duration
     sleep(duration) # Duerme el proceso durante la cantidad de segundos especificada en duration
     print("finished", url, "time taken:", duration, "seconds")  # Imprime un mensaje indicando que se terminó el raspado de la URL y el tiempo que tomó
-    return url, duration
+    return url, duration  # Devuelve la URL y el tiempo que tomó el raspado como una tupla
 urls = ["a.com", "b.com", "c.com", "d.com"]
 if __name__ == "__main__":
     pool = Pool(processes=4)
